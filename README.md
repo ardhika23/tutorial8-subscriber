@@ -23,6 +23,13 @@ AMQP stands for Advanced Message Queuing Protocol. It is an open standard protoc
 
 The URL amqp://guest:guest@localhost:5672 is used to connect to a message broker, which in this case is configured to run on the local machine. Here, the first 'guest' is the username and the second 'guest' is the password for the RabbitMQ server. The localhost:5672 specifies that the RabbitMQ server is running locally on port 5672, which is the default port for RabbitMQ.
 
-</details>
+#### SImulating slow subscriber
+
+![alt text](image.png)
+
+The RabbitMQ dashboard shows a peak in the queue, indicating the publisher is sending messages faster than the subscriber can process them. The total queue count reveals the system's current load; my queued messages reflect the consumer's pace, which in this case, is 40. 
 
 ---
+
+</details>
+
